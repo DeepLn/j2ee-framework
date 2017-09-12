@@ -1,0 +1,18 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: zipkin
+  zipkin:
+    enabled: true
+  sleuth:
+    sampler:
+      percentage: 1.0
+eureka:
+  client:
+#    register-with-eureka: true #是否将eureka自身作为应用注册到eureka注册中心
+#    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://discovery:9000/eureka/
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 9003
+security.basic.enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:9000/eureka/
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: app1
+  clusterNameExpression: new String("default")
