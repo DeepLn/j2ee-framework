@@ -1,5 +1,5 @@
 server:
-  port: 9000                    # 指定该Eureka实例的端口
+  port: 19000                    # 指定该Eureka实例的端口
 
 eureka:
   instance:

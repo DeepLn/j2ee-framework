@@ -1,5 +1,5 @@
 server:
-  port: 9004
+  port: 19004
 spring:
   application:
     name: zipkin
@@ -13,6 +13,6 @@ eureka:
 #    register-with-eureka: true #是否将eureka自身作为应用注册到eureka注册中心
 #    fetch-registry: true
     serviceUrl:
-      defaultZone: http://discovery:9000/eureka/
+      defaultZone: http://discovery:19000/eureka/
   instance:
     prefer-ip-address: true
