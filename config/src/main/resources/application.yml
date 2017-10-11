@@ -1,14 +1,6 @@
 spring:
   application:
     name: config
-server:
-  port: 19005
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:19000/eureka
-
-spring:
   cloud:
     config:
       server:
@@ -18,3 +10,9 @@ spring:
           username: jenkins_user
           password: jenkins_pwd
       label: master
+server:
+  port: 19005
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:19000/eureka
